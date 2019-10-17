@@ -1,0 +1,43 @@
+{
+    "dictionary": {
+        "scheduleNames": ["college", "pf", "mano"],
+        "0": ["college"],
+        "1": ["pf", "hostel"],
+        "2": ["mano", "manoranjitham"]
+    },
+    "college": {
+        "2": ["", "", "", "", "", "Maths", "Maths", "Data Structure", "Data Structure", "Architecture"],
+        "3": ["Competencies", "Social Skills", "Analog & Digital", "Analog & Digital", "Maths", "", "", "", "Analog & Digital Lab", "Analog & Digital Lab"],
+        "4": ["Architecture Lab", "Architecture Lab", "", "", "", "OOPS", "OOPS", "Bio", "Data Structure", "Architecture"],
+        "0": ["Architecture", "Architecture", "Management", "OOPS", "Analog & Digital", "", "", "", "OOPS Lab", "OOPS Lab"],
+        "1": ["Data Structure Lab", "Data Structure Lab", "", "", "", "Bio", "Bio", "Maths", "Management 105", "OOPS"],
+        "5": "Happy Weekend!!!",
+        "6": "Enjoy your Sunday. I hope that it was worth the wait!",
+        "ai": "Here's your College Schedule.",
+        "slots": [480, 530, 585, 640, 695, 750, 805, 860, 915, 965, 1020],
+        "slotNames": ["{|8:00AM|}", "{|8:50AM|}", "{|9:45AM|}", "{|10:40AM|}", "{|11:35AM|}", "{|1:25PM|}", "{|2:20PM|}", "{|3:15PM|}", "{|4:05PM|}", "{|5:00PM|}"]
+    },
+    "pf": {
+        "0": ["BREAKEAS BREAD, BUTTER, JAM, PONGAL, MEDU VADA, SAMBAR, COCONUT CHUTNEY ALOO PARATHA, CURD, TEA, COFFEE, MILK", "PAL PAYASAM, CHAPPATHI, JEERA AL00, CORN PULAO, MASOOR DAL, WHITE RICE, SAMBAR, VEG KOOTU, RASAM, BUTTER MILK, FRYMES, PICKLE", "VEG PUFF, TEA, COFFEE, MILK & BREAD,BUTTER, JAM", "SALAD, MASALA CHAPPATHI, CURD, IDLY, SAMBAR, CHUTNEY, RICE, RASAM, FRYMES, PICKLE, IDLY POO, OIL, SEASONAL FRUITS/ FRUIT SALAD, MILK"],
+        "1": ["BREAD, BUTTER, JAM, POHA, IDLY SAMBAR, GROUNDNUT CHUTNEY TEA, COFFEE, MILK", "SWEET PONGAL, CHAPPATHI, VEG KURMA, DAL 6ISIBELLABATH, CURD RICE, MIX VEG PORIYAL, RICE, RASAM, BUTTER MILK, APPALAM, PICKLE", "CREAM BUN/ CAKE, TEA, COFFEE, MILK & BREAD,BUTTER, JAM", "GREEN SALAD, ATTA PARATHA, BLACKEYE BEANS (KARAMANI) KURUMA, DAL, RICE, RASAM, FRYMES, PICKLE, BANANA, MILK"],
+        "2": ["BREAD, BUTTER, JAM, METHI CHAPPATH1, RAJMA MASALA, RAVA KICHADI, SAMBAR, COCONUT CHUTNEY, OMELETTE, TEA, COFFEE, MILK", "SWEET, POORI, CHENNA MASALA, DAL FRY, PEAS PULAO, RICE, KARA KULAMBU, SNACK GUORD KOOTU, RASAM, BUTTER MILK, FRYMES, PICKLE", "CHANNA SUNDAL/ PEANUT SUNDAL, LEMON JUICE & BREAD,BUTTER, JAM", "SALAD, CHAPPATHI, MUTTER PANEER, RICE, RASAM, FRYMES, PICKLE, BANANA, MILK (CHICKEN CHETTINADU/CHICKEN BIRYANI& VEG BIRYANI)"],
+        "3": ["GREAD, BUTTER, JAM, CHPPATHI, CHENNA DALL MASALA, KAL DOSA, SAMBAR, TOMATO CHUTNEY, TEA, COFFEE, MILK", "SEMIYA PAYASAM, CHAPPATHI, VEG KURUMA, DAL MHAKNI, LEMON RICE/TAMARIND RICE, RICE, KOVAKKAI PORIYAL, RASAM, BUTTERMILK,FRYMES,PICKLE", "SWEET CORN, TEA, COFFEE, MILK & BREAD,BUTTER, JAM", "PALAK CHAPPATHI, MANCHURIAN/VEGETABLE CHILLY VEG FRIED RICE, , GOBI TOMATO SAUCE, RICE, RASAM, BANANA, MILK"],
+        "4": ["BREAD,BUTTER,JAM,WHEAT PARATHA,VEG GRAVY, PONGAL SAMBAR, COCONUT CHUTNEY, BOILED EGG, TEA,COFFEE,MILK", "GULOP JAMUN, CHAPPATHI, GREEN PEAS MASALA, JEERA DAL, KASHMIRI PULAO/ TOMATO PULAO, WHITE RICE, SAMBAR, BEETROOT PORIYAL, RASAM, 1BUTTER MILK, PICKLE, FRYMES", "MYSORE BONDA, COCONUT CHUTNEY, TEA, COFFEE MILK BREAD,BUTTER, JAM", "SALAD, JEERA PULAO, VEGETABLE HARIYALI, POTATO CHIPS, IDLY, SAMBAR, CHUTNEY, RICE, RASAM SEASONAL FRUITS/ FRUIT SALAD, MILK, ICE CREAM"],
+        "5": ["BREAD, BUTTER, JAM, CHAPPATI, KALA CHANA MASALA, IDLY, SAMBARKULAMBU GROUNDNUT CHUTNEY, TEA, COFFEE MILK", "KESARI, POORI, KASHMIRIALOO, VEGETABLE DAL, KARA KULAMBU, CABBAGE KOOTU, WHITE RICE, PASAM, BUTTER MILK, FRYMES, PICKLE", "PAV BHAL, BADAM MILK BREAD, BUTTER, JAM", "SALAD,METHI PARATHA,MIX VEGETABLE KURUMA,WHITE RICE,RASAM,N/V GRAVY,BANANA,MILK"],
+        "6": ["BREAD, BUTTER, JAM, CHOLE ONION UTHAPPAM, TOMATO CHUTNEY, TEA, COFFEE, MILK", "ICE CREAM, CHAPPTHI, BUTTER CHICKEN/CHILLY CHICKEN, PANEER BUTTER MASALA, RICE MBAR, PORIYAL, RASAM, BUTTERMILK, PICKLE, FRYMES", "SAMOSA ,TEA, COFFEE, MILK P& BREAD,BUTTER, JAM", "SALAD, WHEAT PARATHA,GREEN PEAS KURMA, RAVA KICHADI,COCONUT CHUTNEY, WHITE RICE, RASAM,BANANA, MILK"],
+        "ai": "Showing what's in PF mess.",
+        "slots": [450, 690, 990, 1170],
+        "slotNames": ["breakfast", "lunch", "snacks", "dinner"]
+    },
+    "mano": {
+        "0": ["Bread,ButterJam, Chappathi,Karamani Kurma, Tea, Coffee, Milk.", "Chappathi,Aloo Mutter,Veg Biriyanl/Bahara Pulao, Onian Raitha, White Rice,Mysore Dal Fry,Frymes,Manga Pickle,Sweet-Kesari.", "Cake/Donut, Tea, Coffee.", "Poarl,Moong Dal Tadka,3lack Channa Cary,Non-Veg Gravy,White Rice,Frymes,Lemon Pickle, Milk(150ml), Green Salad, Banana."],
+        "1": ["Bread,Butter Jam, Poha, Tea, Coffee,Milk.", "Tea.Coffearatha, Veg Chettinad,White Rice Dal Taduka,Veg Sabzi, Butter Milk,Mixed Pickle, Frymes.", "Bread, Jam,Bajjl/Aloo Bonda, Tea, Coffee.", "Chappathl white Peas Kurma,Veg Pulao,Dal Fry,White Rice Neg Manchurian,Non Veg Gravy,Butter MIlk,Mango Pickle Frymes,Mild150ml), Green Salad,Fresh Fruits."],
+        "2": ["Bread,Rutter,Jam, Idly,Masala Omlette, Sambar Chutney,Tea, Coffee,Milk, Banana.", "Poori, Potato Masala,White Rice, Tomato Fry, Kadai Veg Sabzi,Butter Milk,Lemon Pickle,Sweet- Boondhi/Mysore Pak.", "Bread, Jam,Veg Puffs, Tea. Coffee", "Chappathi, Veg(Panner) Non-VeglChicken Masala/Chilly Chicken],White Rice,Tomato Dal, Butter milk ,Green Salad,Frymes,Mixed Pickle. Milk(150ml, Ice cream."],
+        "3": ["Bread,Butter, Jam,Chappathi, White Peas Curry, Tea, Coffee, MIlk", "Chappathi,Rajma Curry,White Rice,Bagara Dal,Veg Dry Sabzi, Butter Milk Pickle, Frymes", "Bread, Jam, Bonda/Sweet Corn, Tea, Caffee.", "Chola Poori, Chola Masala,While Rice,Dal fry Nan Veg Gravy,Butter milk Lemon Pickle, Milkd150ml), Green Salad, Bannana."],
+        "4": ["Bread, ButterJam, Chappathi,Alga Curry, Tea,Coffee, Milk", "Veechu Chapp.athi Veg Chettinad White Rice,Moong Dal fry Aloo Gobl Dry, Mango Pickle, Frymes,Bread Halwa/Sarkarai Pongal.", "Bread, JamCurd Vada/Mysore Bonda,Tea, Coffee. ", "Aloo Parata, Meal Maker Curry, White Rice,Mix Dal Fry,Vegetable Dry,Vegl French Fry),Non Veg(Egg Keema Masala),Green Salad, Frymes,Mixed Pickle,Milk(150ml), Banana-1."],
+        "5": ["Bread, Butter Jam, Chappathi, uruma, Tea,Coffee ,Milk.", "Poori,Green Peas Masala, White Rice,Toor Dal VegiTadka,Bindl dobyaza,Butter Milk Lemon Pickle Frymes", "Pav Bhaji, Bread. Tea, Coffee", "Chappathi,Mix Veg Curry,Veg Noodles,Tomato Sauce,White Rice,Hara Toor Dal Fry,Nan-Veg Gravy, Milk150ml), Frymes, Mango Pickle, Green Salad,Banana-1"],
+        "6": ["Tea,Coffee ,Milk. la Poori, Chola Masala, Tea,Coffee,Milk", "Chappathi,Veg (Panner), Non-Veg(Chicken Masala 1,White Rice,Moong Dal Fry, Butter Milk,Mixed Plckle, Frymes, Ice Cream.", "Bread, Jam,Pakoda/Kara Sev, Tea, Coffee.", "Diamond Chappathi ,Aloo Parval Masala, White Rice Chola Dal Tadka,Non Veg Gravy,Milk(150ml), Lemon Pickle, Frymes, Green Salad, Seasonal Fruit."],
+        "ai": "Here's the menu of Mano mess.",
+        "slotNames": ["breakfast", "lunch", "snacks", "dinner"]
+    }
+}

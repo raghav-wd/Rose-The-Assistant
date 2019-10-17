@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type='text/javascript' src='//js.zohostatic.com/iam/M_2458281/accounts/js/tplibs/jquery/jquery-1.12.2.min.js'></script><script type='text/javascript' src='//js.zohostatic.com/iam/M_2458281/accounts/js/tplibs/xregexp-all.js'></script><script type='text/javascript' src='//js.zohostatic.com/iam/M_2458281/accounts/js/signin.min.js'></script>
+<script type="text/javascript" src="/accounts/signin.js?servicename=ZohoCreator&serviceurl=https%3A%2F%2Facademia.srmuniv.ac.in%2F%23&portal=10002227248&client_portal=true&service_language=en"></script>
+<script type='text/javascript'>
+		I18N.load({
+        "IAM.ERROR.EMAIL.INVALID" :			'Please enter valid email address',
+        "IAM.ERROR.ENTER.LOGINPASS" :		'Please enter the password',
+        "IAM.ERROR.INVALID_IMAGE_TEXT" :	'Image Text not entered correctly',
+        "IAM.ERROR.INVALID.CREDENTIAL" :	'Invalid Email Address or Password',
+        "IAM.ERROR.USER_NOT_ACTIVE" :		'Account is inactive',
+        "IAM.ERROR.UNCONFIRMED.USER" :		'Account is unconfirmed',
+        "IAM.ERROR.IDP.VALID.DOMAIN" :		'Enter valid Google Apps domain',
+        "IAM.SIGNIN.IDP.GAPPS.DOMAIN" :		'Enter your Google Apps domain',
+        "IAM.ERROR.GENERAL" :				'Error occurred',
+        "IAM.ERROR.INVALID.PASS" :			'Invalid password',
+        "IAM.ERROR.INVALID.MOBILE.NUMBER":  'Invalid Mobile Number'
+    });
+</script>		<title>Sign In</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<script>
+		
+			var validateEmail = function()
+			{
+				var email = jQuery.trim($("#Email").val());	
+  				if(email.length > 50)
+				{
+					$("#emailErr").html('Email address cannot be more than 50 characters').show(); //NO I18N
+					$("#Email").parent().addClass("field-error");	 //No I18N
+					return false;
+				}
+			    var pattern = /^[a-zA-Z0-9._'&+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,22}$/i;
+				if(email == "" || !pattern.test(email))
+				{
+					$("#emailErr").html('Please enter valid email address').show(); //NO I18N
+					$("#Email").parent().addClass("field-error");	 //No I18N
+					return false;
+				}
+				return true;
+			}
+			var onEmailEnter = function(event)
+			{
+				$('#emailErr').hide();$('#passwordErr').hide();$('.input').removeClass('field-error');$('.field-msg').remove();
+  				if (event.which == 13) {
+  					if(validateEmail() == true){
+  						$('#Password').focus();
+   			 			return false; 
+  					}
+  			 		  
+ 			 	}
+			}
+			
+			var onPasswordEnter = function(event)
+			{
+				$('#passwordErr').hide();$('#emailErr').hide();$('.input').removeClass('field-error'); $('.field-msg').remove()
+  				if (event.which == 13) {
+    				submitSigninForm();
+    				return false;    
+ 				 }
+			}
+		
+			function submitSigninForm()
+			{
+				var password = jQuery.trim($("#Password").val());	 //No I18N
+				
+				if(validateEmail() == false){
+					$("#Email").focus();	 //No I18N
+					return false;
+				}
+				
+				if(password == "")
+				{
+					$("#passwordErr").html('Password cannot be empty').show(); //NO I18N
+					$("#Password").focus();	 //No I18N
+					$("#Password").parent().addClass("field-error");	 //No I18N
+					return false;
+				}
+				
+				//changeKeepmeSigninValue();
+				$("#signinForm").submit();
+			}
+
+		</script>
+		<style>
+			.signinForm {
+			    font-family: "ProximaNova",Arial,sans-serif;
+			}
+			.signinForm label {
+			    color: #444444;
+			    font-size: 16px;
+			    font-weight: normal;
+			}
+			.signinForm .input {
+			    padding: 8px 0 8px 0;
+			}
+			.signinForm input[type="text"],
+			.signinForm input[type="password"] {
+			    outline: none;
+			    display: block;
+			    width: 100% !important;
+			    border: 1px solid #E5E5E5;
+			    border-radius: 2px !important;
+			    margin: 0 0 10px;
+			    padding: 10px 10px;
+			    box-sizing: border-box;
+			    transition: 0.3s ease;
+			    font-size: 16px;
+			    font-weight: normal;
+			    color: #444444;
+			    font-family: "ProximaNova",Arial,sans-serif;
+			    background: none;
+			}
+			.signinForm input[type="text"]:focus,
+			.signinForm input[type="password"]:focus {
+			    border: 1px solid #33B5E5 !important;
+			    box-shadow: 0 0 4px 0 rgba(42, 124, 255, .30);
+			}
+			.signinForm input[type="text"]::placeholder,
+			.signinForm input[type="password"]::placeholder {
+			    color: #B4B4B4;  
+			    font-family: "ProximaNova",Arial,sans-serif;
+				font-weight:normal;
+			}
+			.signinForm .field-error input,
+         	.signinForm .field-error input:focus {
+	            border-color: #E65353 !important;  
+	            box-shadow: 0 0 4px 0 rgba(255,42,42,.3) !important;				
+			}
+			.signinForm .btn {
+			    width: 100%;
+			    color: white;
+			    padding: 12px 10px;
+			    box-sizing: border-box;
+			    border: 1px solid #33b5e5;
+			    border-radius: 2px;
+			    background: #33b5e5;
+			    cursor: pointer;
+			    display: block;
+			    transition: 0.3s ease;
+			    font-size: 16px;
+			    font-weight: 600;
+			    text-shadow: none;
+			    -webkit-appearance: none;
+			    font-family: "ProximaNova",Arial,sans-serif;
+			}
+			.signinForm .btn:hover {
+			    background: #2caede;
+			    border-color: #2caede;
+			    box-shadow: 0 0 4px 0 rgba(42, 124, 255, .30);
+			}
+			.signinForm .errormsg {
+			    color: #E65353;
+			    display: block;
+			    line-height: normal;
+			    font-size: 14px;
+			    font-weight: 300;
+			    margin-top: -5px;
+			}
+			.signinForm .field-msg, 
+			.signinForm .invalid-message {
+			    margin-bottom: 0px;
+			    width: 100%;
+			}
+			.signinForm .field-msg .error,
+			.signinForm .invalid-message .error {
+			    color: #E65353;
+			    display: block;
+			    line-height: normal;
+			    font-size: 14px;
+			    font-weight: 300;
+			    background: none;
+			    padding: 0px;
+			    border-radius: 0px;
+			    text-align: left;
+			    border: 0px;
+			    font-family: "ProximaNova",Arial,sans-serif;
+			}
+			.signinForm .field-msg .error {
+				margin-top: 0px;
+				margin-bottom: 10px;
+			}
+		</style>
+		<link href="https://css.zohostatic.com/creator/static_css/font-proximanova.css" type="text/css"  rel="stylesheet" />
+	</head>
+
+
+	<body>
+		<div class="signinForm">
+			<form id="signinForm" action="/accounts/signin.ac" name="signinform" method="post" novalidate="true" autocomplete="off" >
+				<div>
+					<label>Email Address</label>
+				</div>
+				<div class="input">
+					<input type="text" placeholder='Email Address' name="username" id="Email" required autofocus onkeypress="onEmailEnter(event)" onfocusout="validateEmail()"></input>
+					<span id="emailErr" class="errormsg" style="display:none"></span>
+				</div>
+				<div>
+					<label>Password</label>
+				</div>
+				<div class="input">
+					<input type="password" placeholder='Password' name="password" id="Password" required onkeypress="onPasswordEnter(event)"></input>
+					<span id="passwordErr" class="errormsg" style="display:none"></span>
+				</div>
+				<!--
+				<div class="input">
+		        	<input type="checkbox" id="Keepsigned" name="sremember"> <label for="Keepsigned">Remember me</label>
+		        </div>
+		        -->
+		        <div class="input">
+		        	<input class="btn" type="button" onclick="submitSigninForm();" value='Sign In'>
+		        </div>
+			</form>
+		<div>
+		<script type="text/javascript">
+		    function onSigninReady() {
+		        // To avoid glitches on page load, as we lazy load CSS. 
+		         $(document.body).css("visibility", "visible");
+		        $(document.signinform).zaSignIn();
+		        
+		        Form.prototype.showErrors = function(errorObj) {
+						
+						Form.Message.error(this.element, I18N.get("IAM.ERROR.INVALID.CREDENTIAL"));
+				}
+		    };
+			function changeKeepmeSigninValue() {
+		    	var isKeepMeSignedin = document.getElementById("Keepsigned").value;
+		    	if(isKeepMeSignedin == 'on')
+		    	{
+		    		document.getElementById("Keepsigned").value = "true";
+		    	}
+		    	else
+		    	{
+					document.getElementById("Keepsigned").value = "false";
+		    	}
+		    }
+		</script>
+	</body>
+</html>

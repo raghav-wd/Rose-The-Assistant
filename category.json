@@ -1,0 +1,16 @@
+{
+    "apis":{
+        "apisName":["Wikipedia", "OpenWeather", "Lyrics", "Schedule", "Birthday", "Dictionary", "Youtube","Remember", "Google"],
+        "apisKws": {
+            "0": ["search"],
+            "1": ["weather"],
+            "2": ["lyrics"],
+            "3": ["timetable", "schedule", "mess", "pf", "mano", "manoranjitham"],
+            "4": ["birthday", "birthdays"],
+            "5": ["meaning", "definition"],
+            "6": ["play", "play song"],
+            "7": ["remember"],
+            "8": ["google", "how to"]
+        }
+    }
+}

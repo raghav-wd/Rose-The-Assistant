@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" /> -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: white;
+            margin-bottom: 120px;
+        }
+        /* #chatScreen {
+            padding-bottom: 90px;
+        } */
+        .bottom {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.65);
+        }
+        .bottom .row{
+            padding: 0;
+            margin: 0;
+        }
+
+        .submitBtn{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        td{
+            padding: 5px;
+        }
+        tr{
+            border: none;
+        }
+        img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+            display: none;
+            height: 0;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="youtube"></div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+        
+            <tbody id="chatScreen">
+                <!-- <td style="padding: 0;">d</td> -->
+            </tbody>
+        </table>
+    </div>
+    <div class="bottom">
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s10">
+                        <input id="q" name="q" type="text" class="validate">
+                        <label for="query">Last Name</label>
+                    </div>
+                    <div class="col s2">
+                        <div class="submitBtn">
+                            <div class="btn waves-effect waves-light" id="q_run" type="">
+                                <i class="material-icons">details</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div style="display: none;">
+        <h2>Text-To-Speech</h2> <br>
+        <div>
+            <div>
+                <form>
+                    <div>
+                        <textarea name="" id="text-input"
+                            placeholder="Enter Text...."></textarea>
+                    </div>
+                    <div>
+                        <label for="rate">Rate</label>
+                        <div id="rate-value">1</div>
+                        <input type="range" id="rate" class="custom-range" min="0.5" max="2" value="1.2" step="0.1">
+                    </div>
+                    <div>
+                        <label for="pitch">pitch</label>
+                        <div id="pitch-value">1</div>
+                        <input type="range" id="pitch" class="custom-range" min="0" max="2" value="1.8" step="0.1">
+                    </div>
+                    <div>
+                        <select id="voice-select"></select>
+                    </div>
+                    <button>Speak</button>
+                </form>
+            </div>
+        </div>
+    
+    </div>
+
+    <!-- <script type="text/javascript" src="http://tracking.musixmatch.com/t1.0/AMa6hJCIEzn1v8RuOP"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" -->
+        <!-- integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" -->
+        <!-- crossorigin="anonymous"></script> -->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="bot1.js">
+        // var xmlhttp = new XMLHttpRequest();
+        //     xmlhttp.onreadystatechange = function () {
+        //         if (this.readyState == 4 && this.status == 200) {
+        //             var myObj = JSON.parse(this.responseText);
+        //             // alert(myObj);
+        //             document.getElementById("chatScreen").innerHTML = this.responseText;
+        //         }
+        //     };
+        //     xmlhttp.open("GET", "http://localhost:8081/bot/bot.php?q=weather of chennai", true);
+        //     xmlhttp.send();
+    </script>
+</body>
+</html>

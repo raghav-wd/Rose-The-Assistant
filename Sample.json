@@ -1,0 +1,34 @@
+{
+    "0": {
+        "tag": [
+            "birthday"
+        ],
+        "patter": [
+            "When is Rachel's birthday?"
+        ],
+    },
+    "1": {
+        "tag": [
+            "weather", "climate", "city", "temperature"
+        ],
+        "patter": [
+            "Weather of Lucknow"
+        ],
+    },
+    "2": {
+        "tag": [
+            "lyrics"
+        ],
+        "patter": [
+            "Lyrics of Hello"
+        ],
+    },
+    "3": {
+        "tag": [
+            "birthday"
+        ],
+        "patter": [
+            "When is Rachel's birthday?"
+        ]
+    }
+}
